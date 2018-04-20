@@ -1,0 +1,8 @@
+{
+  "name": "cnrApp",
+  "app_id": "0f7b863a",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

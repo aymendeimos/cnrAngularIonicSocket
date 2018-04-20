@@ -1,0 +1,134 @@
+<ion-content padding>
+  <button ion-button (click)="selectTeams()" block>{{teamSelected}}</button>
+<br><br>
+
+
+  <ion-card-content *ngIf="phase1Card" style="background-color:#323232">
+
+
+<ion-row>
+    <h3 style="color:white ; margin-right: 110px;">Phase 1 : {{phase1Points[phase1Points.length - 1]}}</h3>
+    <button (click)="undoPhase1()" ion-button ><ion-icon name="undo"></ion-icon></button>
+  </ion-row>
+    <div style="display:block;text-align:center;width:100%">
+     
+      <input (click)="scorePhase1($event)" type="button" value="9as 7it" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase1($event)" type="button" value="Trophee up" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase1($event)" type="button" value="Trophee t7et" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase1($event)" type="button" value="Trophee ta7" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase1($event)" type="button" value="intervention" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase1($event)" type="button" value="Infonctionel" ion-button outline style="width:200px">
+      <br>
+      
+      <button (click)="emitPhase1()" ion-button color="dark" block>Emit</button>
+    </div>
+
+
+
+  </ion-card-content>
+
+  <ion-card-content *ngIf="phase2Card" style="background-color:#323232">
+
+
+
+      <h3 style="color:white ; margin-right: 110px;">Phase 2 : {{phase2Points[phase2Points.length - 1]}}</h3>
+      <button (click)="undoPhase2()" ion-button ><ion-icon name="undo"></ion-icon></button>
+
+    <div style="display:block;text-align:center;width:100%">
+      <input (click)="scorePhase2($event)" type="button" value="khraj mn lkhat" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase2($event)" type="button" value="ma7alch lbab" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase2($event)" type="button" value="drapeau dialo" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase2($event)" type="button" value="drapeau machi dialo" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase2($event)" type="button" value="intervention" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase2($event)" type="button" value="Infonctionel" ion-button outline style="width:200px">
+      <br>
+      <button (click)="emitPhase2()" ion-button color="dark" block >Emit</button>
+    </div>
+
+
+
+  </ion-card-content>
+
+  <ion-card-content *ngIf="phase3Card" style="background-color:#323232">
+
+
+
+    <h3 style="color:white">Goal : {{goal}} - ssafra : {{safra}} - 7amra : {{hamra}} </h3>
+
+
+    <div style="display:block;text-align:center;width:100%">
+      <input (click)="scorePhase3($event)" type="button" value="goal" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase3($event)" type="button" value="ssafra" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase3($event)" type="button" value="7amra" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase3($event)" type="button" value="intervention" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase3($event)" type="button" value="forfait" ion-button outline style="width:200px">
+      <br>
+      <button (click)="emitPhase3()" ion-button color="dark" block>Emit</button>
+    </div>
+
+
+
+  </ion-card-content>
+  <ion-card-content *ngIf="phase4Card" style="background-color:#323232">
+
+
+
+    <h3 style="color:white">Goal {{penaltys[0]}} {{penaltys[1]}} {{penaltys[2]}} {{penaltys[3]}} {{penaltys[4]}} </h3>
+
+
+
+    <div style="display:block;text-align:center;width:100%">
+      <input (click)="scorePhase4($event)" type="button" value="goal" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase4($event)" type="button" value="notgoal" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase4($event)" type="button" value="intervention" ion-button outline style="width:200px">
+      <br>
+      <input (click)="scorePhase4($event)" type="button" value="Infonctionel" ion-button outline style="width:200px">
+      <br>
+      <button (click)="emitPhase4()" ion-button color="dark" block>Emit</button>
+    </div>
+
+
+
+  </ion-card-content>
+
+  <ion-card-content *ngIf="phase5Card" style="background-color:#323232">
+
+
+
+      <h3 style="color:white">Team Set :D choose next team </h3>
+      <button (click)="submit()" ion-button color="dark" block>SUBMIIT</button>
+  
+  
+     
+  
+  
+    </ion-card-content>
+</ion-content>
+
+<ion-footer style="background-color:#191919">
+  <ion-toolbar transparent>
+    <ion-title>
+      <p align=" center " style="color:white;font-size:0.9em;font-weight:normal">Made with &nbsp;&nbsp;
+        <ion-icon style="color:red" name="heart">
+        </ion-icon> &nbsp;&nbsp; & &nbsp;&nbsp;
+        <ion-icon style="color:black" name="cafe"></ion-icon>
+      </p>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

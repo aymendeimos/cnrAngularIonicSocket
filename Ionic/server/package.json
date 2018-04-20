@@ -1,0 +1,23 @@
+{
+  "name": "express-server",
+  "version": "1.0.0",
+  "description": "express server for cnr",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "express",
+    "server",
+    "todo",
+    "app"
+  ],
+  "author": "aymen and ayman",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.16.3",
+    "mongoose": "^4.11.7",
+    "morgan": "^1.8.2",
+    "socket.io": "^2.0.3"
+  }
+}
